@@ -1,0 +1,856 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title> Dashboard </title>
+
+		<!-- FavIcon -->
+		<link rel="icon" href="https://dl.dropbox.com/s/7sosry4qeps9fvl/favicon.png">
+
+		<!-- BootStrap -->
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
+		<script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+
+		<!-- CSS -->
+		<link rel="stylesheet" type="text/css" href="css/Style.css">
+
+		<!-- JS -->	
+		<script src="js/Script.js"></script>
+	</head>
+
+	<body onload="resizeItForSomeReason()">
+		<div class="container-fluid">
+			<div class="row">
+				<div id="automaticResizer">
+					<div class="col-md-12">
+						<div class="alert alert-info alert-dismissable hidden" id="myInfoAlert">
+							<button type="button" class="close" onclick="hideAlertMessage('myInfoAlert')">×</button>
+							<strong>Info!</strong> This color is for information:
+							<hr>
+							<p> 
+								Although it's a neutral color, you might get some useful information from these notifications.
+							</p>
+						</div>
+					</div>
+						
+					<div class="col-md-12">
+						<div class="alert alert-success alert-dismissable hidden" id="mySuccessAlert">
+							<button type="button" class="close" onclick="hideAlertMessage('mySuccessAlert')">×</button>
+							<strong>Success!</strong>
+							<p> 
+								This is a good color. You would see this kind of messages when you have successfully performed an action.
+							</p>
+						</div>
+					</div>
+						
+					<div class="col-md-12">
+						<div class="alert alert-warning alert-dismissable hidden" id="myWarningAlert">
+							<button type="button" class="close" onclick="hideAlertMessage('myWarningAlert')">×</button>
+							<strong>Warning!</strong> Be cautious of these messages. They could be important.
+						</div>
+					</div>
+						
+					<div class="col-md-12">
+						<div class="alert alert-danger alert-dismissable hidden" id="myDangerAlert">
+							<button type="button" class="close" onclick="hideAlertMessage('myDangerAlert')">×</button>
+							<strong>Danger!</strong> Think twice before clicking a button of this color. You might delete
+							your account or perform some other irreversible action. 
+						</div>
+					</div>
+				</div>
+
+	<div class="col-md-6 col-sm-6">
+		<div class="panel panel-default">
+			<div class="panel-heading">
+				<h4>Colored buttons &amp; Notifications</h4>
+			</div>
+		   
+			<div class="panel-body">
+				<div class="row">
+					<div class="col-xs-6"><a class="btn btn-default center-block" onclick="hideAllAlertMessages('mySuccessAlert', 'myInfoAlert', 'myWarningAlert','myDangerAlert')">Remove All</a></div>
+					<div class="col-xs-6"><a class="btn btn-primary center-block" onclick="showAllAlertMessages('mySuccessAlert', 'myInfoAlert', 'myWarningAlert','myDangerAlert')">Get All</a></div>
+				</div>
+			  
+				<div class="row">
+					<div class="col-xs-6">
+						<span class="label label-default">Label</span>
+					</div>
+				
+					<div class="col-xs-6">
+						<span class="label label-primary">Primary</span>
+					</div>
+				</div>
+				<br>
+				<div class="row">
+					<div class="col-xs-3">
+						<a class="btn btn-warning center-block" onclick="showAlertMessage('myWarningAlert')">Get</a>
+					</div>
+
+					<div class="col-xs-3">
+						<a class="btn btn-info center-block" onclick="showAlertMessage('myInfoAlert')">Get</a>
+					</div>
+
+					<div class="col-xs-3">
+						<a class="btn btn-success center-block" onclick="showAlertMessage('mySuccessAlert')">Get</a>
+					</div>
+
+					<div class="col-xs-3">
+						<a class="btn btn-danger center-block" onclick="showAlertMessage('myDangerAlert')">Get</a>
+					</div>
+				</div>
+			 
+				<div class="row">
+					<div class="col-xs-3">
+						<span class="label label-warning">Warning</span>  
+					</div>
+
+					<div class="col-xs-3">
+						<span class="label label-info">Info</span>
+					</div>
+
+					<div class="col-xs-3">
+						<span class="label label-success">Success</span>
+					</div>
+				
+					<div class="col-xs-3">
+						<span class="label label-danger">Danger</span>
+					</div>
+				</div>
+			</div>
+		</div> 
+
+		<div class="panel panel-default">
+			<div class="panel-heading">
+				<h4>There's a Certain Slant of Light - Analysis</h4>
+			</div>
+
+			<div class="panel-body">
+				<div class="col-sm-12 text-center" >		  
+					<div class="tabbable">
+						<div class="tab-content">
+							<div class="tab-pane active fade in" id="1">
+								<div class="well well-sm"> 
+									<strong>
+										page 1
+									</strong>
+									<hr>
+									<p> 
+										This essay will go into the poem «There's a Certain Slant of Light» by Emily Dickinson. The structures of the poem will be looked at after the meanings of the poem become more clear, but the focal point for most of the following analysis is the lyrical content, and therefore only the structures that seem relevant for one's understanding of the text will be discussed. When one looks at this poem, like other poems by Emily Dickinson, one sees that the words therein are all chosen with such consideration that removing a single one would have drastic consequenses. Because of this, it is vital for one's comprehension of her work to look at these poems slowly. This analysis will therefore not rush through the poem, but devote a paragraph to every two lines of the poem, effectively splitting the poem into eight parts.
+									</p>
+									<p>	
+										The two first lines brings a light into existence, a light that can only be seen on winter afternoons (ll. 1-2). This conjures up images of a cold winter where the light has found its way into the room of the persona writing the poem. Light is mostly seen as a positive word that represents life, enlightenment, ideas and other positive aspects of this world. This certain light, however, is slanting and not a light that would be seen as a prime example of something positive. If something is slanting one would in most cases want to fix whatever is slanting and  make it straight or right again. These two lines would seem quite serene if one stopped reading at this point, but that which follows deals with the darker aspects of life.
+									</p>
+									<p>	
+										Lines three and four give the light the attribute of being oppressing and heavy (l. 3). This gives a clue that the light might not be a light, but more a feeling that can be experienced on these winter afternoons. The heavy-laden feeling is compared with that of cathedral tunes, something that is never more oppressing than when one associates it with funerals and death (l. 4). Light is also not something that is commonly thought to have weight, and the choice of the word might therefore be symbolic. The meaning chosen in this analysis is that the light represents life, and that at certain times life feels dreadful and heavy.
+									</p>
+									<p>	
+										The second stanza says that this feeling gives us «heavenly hurt» (l. 5). These two words are not usual to see together, as pain and hurting are rarely seen as something from the heavens. When one sees the light as life, then this divine despair would be something that 
+									</p>
+								</div>
+							</div>
+					
+							<div class="tab-pane fade" id="2">
+								<div class="well well-sm">
+									<strong>
+										page 2
+									</strong>
+									<hr>
+									<p> 
+										could only be caused by life, and therefore it would come from the heavens and be good in some way. One way of looking at this would be to see the winter afternoons as the periods of thanatophobia most people go through. Fear of death and the unknown, the uncertainty of what happens after life in this form, and that it will one day end. Such despair is in itself divine and would not exist where there is no life to be lost. The second line of the stanza further supports this idea as it says there is no scar to be found (l. 6). Not only does this signal that the pain is not what is referred to as physical «hurt», but rather something emotional, it also says that there is no emotional scar. A despair of life and death is one that becomes a heavy burden, but once the despair has vanished there is no scar left behind. 
+									</p>
+									<p> 
+										The third and fourth lines of the stanza say that there is internal difference that can be found and that this is where the meanings are (ll. 7-8). This internal difference might be the difference one can find in one's self after the despair has vanished. After longer or shorter struggles with the meaning of life and death, one often reaches a point of acceptance or even enlightenment. This is what one is left with instead of a scar, and this is in itself divine. «Heavenly hurt» is heavenly in that it leaves one with personal growth instead of emotional scars. 
+									</p>
+									<p> 
+										The first line of the third stanza reads «none may teach it - any -» (l. 9). What one learns from the divine despair is not something that can be taught, but one must experience it firsthand and struggle with the burden oneself to reap the rewards in form of personal growth. The separation of «any» makes it clear that one can not comprehend the slightest amount of such knowledge without introspection «on winter afternoons». The second line of the stanza  is «seal despair» (l. 10). Ruling out that this is the despair of fin-footed mammals, this implies that the despair is something sealed within the person. A seal is also something that has significant importance and is official. This means that the despair is in itself important in the same way that life is said to have a value that can not be compared with the value of other things or explained in any way.
+									</p>
+									<p> 
+										The third line of the third stanza says that it is «an imperial affliction», something relating to an empire (l. 11). The empire that this refers to is likely to be the human empire, that the «heavenly hurt» is a feeling belonging to all humankind. «Heavenly hurt» is the seal that makes one, officially, a part of the human empire. One could argue that this is a statement 
+									</p>
+								</div>
+							</div>
+
+							<div class="tab-pane fade" id="3">
+								<div class="well well-sm">
+									<strong>
+										page 3
+									</strong>
+									<hr>
+									<p> 
+										saying that this feeling is something rooted in the human conscience to such an extent that it defines humans and defines life. Maybe these feelings and thoughts can be seen as an essencial part of «cogito ergo sum»; I experience divine despair and therefore I am not only alive, but also a part of the empire in which all humankind belong. The next line says that the imperial affliction is something that has been «sent us of the air»; from the heavens above (l. 12). This line makes it clear that the persona is not just referring to personal growth that will be achieved, but also enlightenment in the form of believing in a higher force of the kind people refer to as a God. The divine despair has been sent by the sole deity said to have created all humankind in his image. This «heavenly hurt» might even be caused by his being remaining obscured from the eyes of all humankind. God has planted the uncertainty and despair as an imperial seal, making it official that the life being lived is that of a human and not that of any other being that walks this earth.
+									</p>
+									<p> 
+										The fourth and last stanza starts by saying that when the slanting of the light that is divine despair comes, the landscape listens (l. 13). This line is easier to understand now that God has been established as a part of the poem. God is the only being that could interfer with nature in a way that makes it listen. When life comes, and the seal of despair with it, nature listens to this and maybe even helps with the personal growth. The second line of the stanza says that shadows hold their breath (l. 14). Shadows will have to wait till the light is gone before they can have their turn. Light and darkness here would represent life and death. These states can not occur at the same time as one can not be alive and dead in the same moment. Breathing is also something that can symbolize life, and one can therefore see that there might also be life in death. This life could be what in Christianity is referred to as the afterlife.
+									</p>
+									<p> 
+										The third and fourth lines of the last stanza read «when it goes, 'tis like the distance on the look of death» (ll. 15-16). When the light goes out, and there is only shadows left, the contrast between life and death becomes more clear. The distance between what is living and what is dead is uncomprehendable till the moment comes and the lights fade away. This might also be referring to the distant look one might see on many a dying man. Maybe this distant look is caused by the dying person seeing what comes as the lights turn dim.
+									</p>
+									<p> 
+										If one were to sum up the contents of each stanza one might say that the first stanza introduces the weight of life, the second stanza says that the despair one feels in life is what
+									</p>	
+								</div>  
+							</div>
+					
+							<div class="tab-pane fade" id="4">
+								<div class="well well-sm">
+									<strong>
+										page 4
+									</strong>
+									<hr>
+									<p> 
+										helps one grow and gain acceptance, the third stanza says that this despair is something received by god and is what everyone will have to face in order to gain knowledge that cannot be learned in any other way, and the last stanza is about how death is very different from life, but that there are positive aspects of death as well. The poem starts with life and ends with death. 
+									</p>
+									<p> 
+										There are a great deal of emotions in the poem, some which are reinforced by the use of alliteration. In the first stanza there is much use of s's like «there's», «certain», «slant», «afternoons», «oppresses», «tunes». This hissing sound is one that often reminds one of snakes, which in turn reminds one of venom and death, but most of all it signals impending danger and fear for what is to come. Such a signal is appropriate in the beginning of the poem as the poem grows darker as it goes. «Heavenly hurt» is another alliteration that gives the words more impact. One might be tempted to compare these h's with the grasping for breath that often comes with certain despair. The third and last alliteration that will be mentioned in this essay is the heavy d's. They are not found close to each other, but always in the end of a line. The words are «difference», «despair», «distance», and «death». All these words are heavy words that become even heavier because of their position in the poem, and because of the heavy consonants they begin with.  
+									</p>
+									<p> 
+										Another tool that is used in this poem, one that Emily Dickinson is particularily known for using, is fragments and dashes. The dashes have been used especially to create more focus on certain words and phrases. One finds this in the first line of the third stanza; «none may teach it - any -». Here the dashes contribute to single out «any» and emphasize that there is not anything of this that can be taught. In the second line of the fourth stanza the words «hold their breath» is bound by dashes and makes one look more at the process of holding their breath, than the shadows themselves. There are also similar device used to single out words that would normally get less attention without the separation. One example of this is «are» in the fourth line of the second stanza: «Where the Meanings, are -». The separation here has not been achieved by dashes, but by a comma in a peculiar position. These separating devices, as well as ungrammatical sentences, create the fragments that Emily Dickinson has become famous for using in her poems.
+									</p>
+									<p> 
+										Emily Dickinson is an experimental poet who often takes a formal poetic structure as
+									</p>
+								</div>
+							</div>
+					
+							<div class="tab-pane fade" id="5">
+								<div class="well well-sm">
+									<strong>
+										page 5
+									</strong>
+									<hr>
+									<p> 
+										the base of her poems, but then she makes small alterations that result in the poems being slightly different from the predefined structure. In «There's a Certain Slant of Light» she uses an ABCB rhyme scheme for the first stanza, but changes to the rhyme scheme ABAB in the last stanza. Here the change could represent the end of despair. Even though there is a certain regularity in the ABCB rhyme scheme, there are pieces that will not fit. In the same way as the persona in the poem is in despair and does not know how to piece his or her life together, the rhyme scheme is signalling that there is a struggle going on to find a meaning that can make his or her life come to order. In the last stanza there is an order in the persona's life that might not be found till death. When life has been resolved in the last stanza, there is order in the structure that signals the same.
+									</p>
+									<p> 
+										In the work of Emily Dickinson one can also see that she is not a confessional poet, but creates various poetic personae that might be found behind the poems. The persona in «there's a certain slant of light» might be a person who's life is coming to an end. This persona tells us what he or she feels and describes the despair one has in life and how this will eventually come to an end. Only by creating a different persona could one talk about the entire life from a confessional viewpoint including the last moments when one rarely is capable of writing down experiences in such detail.
+									</p>
+									<p> 
+										It seems appropriate to finish this essay with a few words about the poem as a whole. Emily Dickinson has written a very compact poem that encompasses the despairs of life and the transition one faces in relation to death. When it comes to the emotional part, it could be said that the poem is concerned with the darker aspects of life, but has a positive belief in that all is right and will lead to a better tomorrow. There is a ray of light shining through the darkness if you will. «There's a certain slant of light» takes up important issues of life in a very serious tone. One could analyse the meaning of the poem, like most poems, in many different ways, but the subject at hand will always be a serious one pertaining to life and death. Emily Dickinson is not a person whom people know a great deal about, and that gives one more freedom in ways of looking at the poem. However, from what one knows about her life, and by looking at her other works, there is good reason to believe that God plays a central role in the meaning of the poem. All in all it is a remarkable poem worthy of much consideration, as well as the fame it has gained throughout the years. 
+									</p>
+								</div>
+							</div>
+						</div>
+					</div>
+				
+					<ul id="mytabs" class="pagination center-block" style="display:inline-block;">
+						<li><a onclick="prevTab()">«</a></li>
+						<li class="active"><a href="#1" data-toggle="tab">1</a></li>
+						<li><a href="#2" data-toggle="tab">2</a></li>
+						<li><a href="#3" data-toggle="tab">3</a></li>
+						<li><a href="#4" data-toggle="tab">4</a></li>
+						<li><a href="#5" data-toggle="tab">5</a></li>
+						<li><a onclick="nextTab()">»</a></li>
+					</ul>
+				</div>
+			</div>
+		</div>
+		
+		<div class="row" >
+			<div class="col-lg-4 col-md-12 col-sm-12" >
+				<div class="panel panel-default">
+					<div class="panel-heading">
+						<h4>Links</h4>
+					</div>
+					<div class="panel-body">
+						<div class="list-group">
+							<a href="#" class="list-group-item active">First Link (Primary)</a>
+							<a href="#" class="list-group-item">Second Link</a>
+							<a href="#" class="list-group-item">Third Link</a>
+							<a href="#" class="list-group-item">Fourth Link</a>
+							<a href="#" class="list-group-item">Fifth Link</a>
+						</div>
+					</div>
+				</div>
+			</div>
+			
+			<div class="col-lg-4 col-md-12 col-sm-12" id="contact">	
+				<div class="well"> 
+					<form action="http://design-jostein.rhcloud.com/Dashboard/addmessage.php" method="post" class="form-horizontal" role="form">
+						<h4>Contact us:</h4>
+						<input type="hidden" name="contactTopic" value="Category1">	
+						<input type="hidden" name="contactSubject" value="DashBoard">
+						<div class="form-group" style="padding:5%;">
+							<textarea style="resize:none" name="contactMessage" required="required" class="form-control input-lg" rows="5" maxlength="70" placeholder="Message"></textarea>
+						</div>
+						<div class="input-group text-center">
+							<input type="email" name="contactEmail" required="required" class="form-control input-lg" placeholder="email@domain">
+							<span class="input-group-btn"><button class="btn btn-lg btn-primary" type="submit">Post</button></span>
+						</div>
+					</form>
+				</div>
+			</div>
+		 
+			<div class="col-lg-4 col-md-12 col-sm-12"> 
+				<div class="panel panel-primary">
+					<div class="panel-heading">
+						<h4>Important Information</h4>
+					</div>
+					<div class="panel-body">
+						All the texts on this website have been created by <b>Jostein Design</b>. Do you need 
+						someone to create content for your website? <b>Jostein Design</b> is a fully qualified
+						<code>writer, translator and proofreader</code>.
+						In addition to content creation, <b>Jostein Design</b> can help you with everything from 
+						<code>design to development</code> of your website. This includes <code>illustrations and database
+						management</code>. 					
+						<hr>
+						<form action="http://design-jostein.rhcloud.com/Dashboard/addmessage.php" method="post" role="form">
+							<div class="input-group">
+								<div class="input-group-btn">
+									<button type="button" class="btn btn-default" id="myBtn1" onclick="makePrimary('myBtn1')">
+										<i class="glyphicon glyphicon-log-in"></i>
+									</button>
+									
+									<button type="button" class="btn btn-default" id="myBtn2" onclick="makePrimary('myBtn2')">
+										<i class="glyphicon glyphicon-log-out"></i>
+									</button>
+								</div>	
+								<input type="hidden" name="contactTopic" value="Category1">
+								<input type="hidden" name="contactSubject" value="DashBoard">
+								<input type="hidden" name="contactEmail" value="Comment">
+								<input type="text" name="contactMessage" required="required" class="form-control" placeholder="Add a comment..">
+							</div>
+						</form>
+					</div>
+				</div> 
+			</div>
+		</div>
+	</div>
+
+	<div class="col-md-6 col-sm-6">
+		<div class="row">
+			<div class="col-lg-7 col-md-12 col-sm-12">
+				<div class="panel panel-default">
+					<div class="panel-heading">
+						<h4>Modals</h4>
+					</div>
+					<div class="panel-body">
+						<ul class="nav navbar-nav">
+							<li><a href="#loginModal" role="button" data-toggle="modal">Log in</a></li>
+							<li><a href="#aboutModal" role="button" data-toggle="modal">About</a></li>
+							<li><a href="#thirdModal" role="button" data-toggle="modal">Walnuts</a></li>
+						</ul>
+					</div>
+				</div>
+			</div>
+		
+			<div class="col-lg-5 col-md-12 col-sm-12">
+				<div class="panel panel-default">
+					<div class="panel-heading">
+						<h4>Dropdown Modals</h4>
+					</div>
+					<div class="panel-body">
+						<div class="dropdown">
+							<button class="btn btn-primary dropdown-toggle" type="button" data-toggle="dropdown">Modals
+							<span class="caret"></span></button>
+							<ul class="dropdown-menu">
+								<li><a href="#loginModal" role="button" data-toggle="modal">Log in</a></li>
+								<li><a href="#aboutModal" role="button" data-toggle="modal">About</a></li>
+								<li><a href="#thirdModal" role="button" data-toggle="modal">Walnuts</a></li>
+							</ul>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<div class="panel panel-default" id="progress">
+			<div class="panel-heading">
+				<h4>Progress Bars</h4>
+			</div>
+			<div class="panel-body">
+				<div class="progress">
+					<div class="progress-bar progress-bar-info" style="width: 20%" id="infoProgress"></div>
+				</div>
+				<div class="progress">
+					<div class="progress-bar progress-bar-success" style="width: 40%" id="successProgress"></div>
+				</div>
+				<div class="progress">
+					<div class="progress-bar progress-bar-warning" style="width: 70%" id="warningProgress"></div>
+				</div>
+				<div class="progress">
+					<div class="progress-bar progress-bar-danger" style="width: 50%" id="dangerProgress"></div>
+				</div>
+
+				<div class="row">
+					<div class="col-xs-6"><a class="btn btn-default center-block" onclick="decreaseProgressValue('infoProgress')">Decrease</a></div>
+					<div class="col-xs-6"><a class="btn btn-primary center-block" onclick="increaseProgressValue('infoProgress')">Increase</a></div>
+					<div class="col-xs-6">
+						<span class="label label-info">-10</span>
+			  		</div>
+			  		<div class="col-xs-6">
+						<span class="label label-info">10</span>
+			  		</div>
+				</div>
+			  	<br>
+				<div class="row">
+				  	<div class="col-xs-6"><a class="btn btn-default center-block" onclick="decreaseProgressValue('successProgress')">Decrease</a></div>
+				  	<div class="col-xs-6"><a class="btn btn-primary center-block" onclick="increaseProgressValue('successProgress')">Increase</a></div>
+			  		<div class="col-xs-6">
+						<span class="label label-success">-10</span>
+			  		</div>
+			  		<div class="col-xs-6">
+						<span class="label label-success">10</span>
+			  		</div>
+				</div>
+			  	<br>             
+				<div class="row">
+			  		<div class="col-xs-6"><a class="btn btn-default center-block" onclick="decreaseProgressValue('warningProgress')">Decrease</a></div>
+			  		<div class="col-xs-6"><a class="btn btn-primary center-block" onclick="increaseProgressValue('warningProgress')">Increase</a></div>
+				  	<div class="col-xs-6">
+						<span class="label label-warning">-10</span>
+			  		</div>
+				  	<div class="col-xs-6">
+						<span class="label label-warning">10</span>
+			  		</div>
+				</div>
+			 	<br>
+				<div class="row">
+			  		<div class="col-xs-6"><a class="btn btn-default center-block" onclick="decreaseProgressValue('dangerProgress')">Decrease</a></div>
+			  		<div class="col-xs-6"><a class="btn btn-primary center-block" onclick="increaseProgressValue('dangerProgress')">Increase</a></div>
+				 	<div class="col-xs-6">
+						<span class="label label-danger">-10</span>
+			  		</div>
+					<div class="col-xs-6">
+						<span class="label label-danger">10</span>
+			  		</div>
+				</div>
+			</div>
+		</div> 
+
+		<div class="panel panel-default" id="tabs">
+			<div class="panel-heading">
+			   	<h4>Tabs</h4>
+			</div>   
+			<div class="panel-body">
+				<ul class="nav nav-tabs">
+					<li class="active"><a href="#A" data-toggle="tab">Essay</a></li>
+					<li><a href="#B" data-toggle="tab">SFG 1</a></li>
+					<li><a href="#C" data-toggle="tab">SFG 2</a></li>
+				</ul>
+				<div class="tabbable">
+					<div class="tab-content">
+						<div class="tab-pane active" id="A">
+							<div class="well well-sm">
+								<strong>
+									University does not prepare you for the working world.
+								</strong>
+								<br><br>
+								<p> 
+									It has been stated that universities do not prepare one for the working world one will face after the completion of one's studies. Whether or not this is true is dependant on a number of factors such as what one studies and where this studying is taking place. There is, however, a number of factors that are of a more general nature.
+								</p>
+								<p> 
+									Most courses taught in universities today require a significant amount of independent study and thought. This increases one's ability of critical thinking, as well as teaching one the skills necessary to learn independently. These are skills that come in handy in practically every occupation. There is, however, no perfect substitute for real world experience. The workplace might have a different approach to problems, and then the years one has spent in a university might influence one to go against the accepted norms of said workplace. Although this might be true in some cases, students are subjected to a number of different work forms, and will therefore, in most cases, become more adapt to a changing environment. 
+								</p>
+								<p> 
+									One argument against the claim is that one needs the time spent in a university to reach a level of maturity required to work in the real world. Many students have not yet chosen a career before they enroll, and might need this time to realize one's potential within different fields. On the other side, there are those that are mature enough, and have known what they will do for years before they enroll. 
+								</p>
+								<p>
+									An important aspect of the working world is how to present your opinions and such in an appropriate manner. This is dealt with in universities by the amount of papers, essays, and so on, that one has to write. These things also tend to have a deadline, which relates to another aspect of the working world; how to deal with stress. 
+								</p>
+								<p>
+									One of the most important reasons for why one goes to university is the acquisition of knowledge. This is not only important to get a job, but also to be able to do said job in a satisfactory manner. There is, however, reason to argue that the knowledge one might obtain from the university, is not as specialized as what is required in the working world. The need for this broad field of knowledge is caused by the differences in various jobs one might apply for after one has finished one’s education.
+								</p>
+								<p>
+									One of the most accepted arguments against going to the university is the expenses. After one has finished one’s education, one might find oneself with a substantial amount of debt, which could cause problems when one enters the working world. Not only does this mean that one have to adjust the living conditions accordingly, but one might not be able to take certain jobs that are, among other things, too far away.
+								</p>
+								<p>
+									When one looks at all the pros and cons of the universities, in concord with what the working world entails, one could conclude with the importance of such an institution. There are, however, several aspects of this educational system that might not have been perfected, for the education of what one would consider an ideal employee.
+								</p>
+							</div>
+						</div>
+						
+						<div class="tab-pane" id="B">
+						  	<div class="well well-sm">
+								<strong>
+									Analysis of text (outtake)
+								</strong>
+								<br><br>
+								<p> 
+									When one looks at all the processes in this text one sees that approximately 50% of the processes are of relational type. This dominance of relational process types would imply a good deal of text that is about relations between someone or something and someone or something else. This is the case as the text is about Owen's recent success and how that affects his position in Manchester United and how this relates to matches in the future.
+								</p>
+								<p> 
+									The second most frequent process type is the material type with approximately 20% and mental process types following with approximately 15%. The amount of material process types is necessary for talking about what happened and it is, if anything, surprising to see such a low amount of these compared to the relational process types. The mental process types are used when the participants involved are saying something about what they think about the situation. If the text were explaining what actually happened in the game it would be likely that one would see a higher percentage of material process types. 
+								</p>
+								<p> 
+									The focus is on what Manchester United did and more specifically on Owen. One can see this by looking at who the actor is in the material processes. Even in the end of the text when the Leeds manager, Simon Grayson talks about them from Leeds' point of view, the actor remains Manchester United and what they did to Leeds instead of making Leeds the actor. This makes the defeat suffered by Leeds sound less important than the victory of Manchester United.
+								</p>
+								<p> 
+									When one looks at relative processes, one can often assume that the carrier, token, possessor or identified, is the important participant of the text. Michael Owen is, most of the time, the one being identified with different kinds of identifiers, as well as being the carrier of different attributes. This further shows how he is the main participant throughout the text. 
+								</p>
+								<p> 
+									All in all, this seems to be an average article of it's kind. The heading might invoke an expectation of more mental processes with Sir Alex Ferguson as the senser, but it does not take long to see that the text is most of all about Michael Owen. Other types of articles, especially those not found in the sports or entertainment section, would be more likely to have a dominance of material process types instead of relational process types, but this article has it's focus less on the action and more on the people involved.
+								</p>
+						  	</div>
+						</div>
+						<div class="tab-pane" id="C">
+						  	<div class="well well-sm">
+								<strong>
+									Analysis of text (outtake)
+								</strong>
+								<br><br>
+								<p> 
+									From this, one can see two thematized comments in opposite ends of the text. The first, «it was a shock», conveys much of the feeling one gets from reading the rest of the text. The second thematized comment is «it is good». This comment sums up the writers feelings towards the shock. In some ways it could be said that it sums up the whole article if one does not care for the details of the incident.
+								</p>
+								</p>	
+									In group 2 there are two groups of people affected and three changes that happened. Changes one and two use a marked theme to put the usual programme first and then then the experiential «there» to call the actual programmes into existence. The first group of people, on the other hand, is not different from other days and an unmarked declarative is sufficient. The second group of people, however, is introduced in the same theme as the third change. By using interpolation, the writer could use the same order as before, but leaving only the actual programme in the rheme.
+								</p>
+								</p>	
+									As this is a fairly short article, one finds that approximately half the themes are marked. This could be because of all the comparisons in the text. Nearly all the marked themes are comparing this incident with the usual proceedings on the radio station. This makes it more clear how different everything was this one time. If the text were longer, one would possibly see more unmarked themes and a less contrastive approach.
+								</p>
+						  	</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+</div>
+
+<div class="container-fluid" id="news">
+	<div class="row">
+		<div class="col-lg-4 col-md-6 col-sm-12">
+			<div class="panel panel-default">
+				<div class="panel-thumbnail"><img src="http://placehold.it/1x1/bb1156/ffffff" width="100%" height="100pt"  style="object-fit:cover;"></div>
+					<h2 class="textOnImage">Psycholinguistics</h2>
+					<div class="panel-body">
+						<p class="lead">
+							<strong>Språk og Tenkning</strong>
+						</p>
+						<p> 
+							Hvor mye har språk å si for hvordan vi tenker? Kan språket (eller språkene) vi bruker i det daglige liv forandre hvordan vi oppfatter ikke-verbale situasjoner?
+						</p>
+						<p> 	
+							Lingvisten Benjamin Lee Whorf sin lingvistiske relativitets hypotese sier at språk ikke bare har en innflytelse på tenkningen, men faktisk bestemmer hva man har mulighet til å tenke. Dette ville i såfall betydd at personer som kommer fra kulturer som bare har noen få ord for farger burde ha større vanskeligheter med å se hele fargespektrumet enn personer som har mange ord for dette.
+						</p>
+						<p> 	
+							Eleanor Rosch testet dette ved å studere Daniene fra New Guinea, siden de bare har to fargeord i deres språk. I motsetning til det den lingvistiske relativitetshypotese ville tilsi, så viste seg at de, i likhet med personer som har mange ord for farger, kunne skille mellom et vidt spekter av farger. En annen studie som involverte geometriske former og folk fra Mundurkú, som ikke har mange ord for dette, gav samme resultat.
+						</p>
+						<p> 	
+							En annen studie viser derimot, når en sammenligner barn fra Himba med engelske barn, vil de engelske være bedre til å skille mellom farger. Siden språket man snakker Himba har bare fem ord for basisfarger og engelsk har elleve, så vil dette støtte Whorf sin hypotese. Likevel så tror de fleste lingvister at språket ikke bestemmer hva man tenker, men heller bare har en innflytelse på tenkningen og hvor effektivt man kan kategorisere erfaringer. 
+						</p>
+						<p> 	
+							Språk kan også påvirke våre oppfatninger, valg og konklusjoner. Studier viser, for eksempel, at det kan skape og opprettholde stereotyper.  En studie der høyskoleelever skulle lese et av to utsagn, der et av dem brukte maskuline ord som "man" og "himself", mens det andre brukte mer kjønnsnøytrale ord som "people" og "themselves". Så skulle de si hvor attraktivt yrket som ble omtalt ville være for menn og kvinner. Dette resulterte i at de som leste utsagnet med maskuline ord svarte at yrket var mindre attraktivt for kvinner, enn det de som leste det andre utsagnet svarte. 
+						</p>
+						<p> 	
+							I noen tilfeller kan språk, ikke bare ha innflytelse på hvordan vi tenker, men også hvor godt vi tenker. Et eksempel på dette er de matematiske ferdighetene, til personer fra en del asiatiske land i motsetning til personer fra mer vestlige land. En av grunnene til dette kan være ordene og symbolene de forskjellige språkene bruker for representere tall. Mange asiatiske språk gjør det mye enklere å lære de grunnleggende to-sifrede tallsystemene. På språk som Kinesisk og Japansk så vil elleve og tjue være ti-en og to-ti respektivt. Dette fører til at for eksempel et norskt barn vil ha problemer med å skjønne systemet i samme hastighet som et barn fra Kina eller Japan.
+						</p>
+						<p> 	
+							Det virker til at, selv om det kansje ikke bestemmer hvordan man tenker, så kan språk absolut påvirke hvordan man tenker i en del situasjoner. Hva slags språk man bruker i det daglige liv kan også ha fordeler og ulemper når det kommer til spesifikke felt.
+						</p>
+						<hr>
+						<p>
+							1328 Followers, 48 Posts
+						</p>
+						<p>
+							<img src="https://dl.dropboxusercontent.com/s/bx6bfm1t1kj8x7t/yellowfemale1.png" width="40pt">
+							<img src="https://dl.dropboxusercontent.com/s/2bc0ef8ztgok8v7/yellowfemale3.png" width="40pt">
+							<img src="https://dl.dropboxusercontent.com/s/hg03889o35rlzas/yellowmale1.png" width="40pt">
+							<img src="https://dl.dropboxusercontent.com/s/lf0hp4pqiciim6h/yellowfemale2.png" width="40pt">
+						</p>
+					</div>
+				</div>
+			</div>
+			<div class="col-lg-4 col-md-6 col-sm-12">
+				<div class="panel panel-default">
+					<div class="panel-thumbnail"><img  src="https://dl.dropboxusercontent.com/s/nle5trclgy1jsfn/brandy.jpg" width="100%" height="100pt"  style="object-fit:cover;"></div>
+						<h2 class="textOnImage">Comparing two Texts</h2>
+						<div class="panel-body">
+							<p class="lead">
+								<strong>Comparison</strong>
+							</p>
+							<p> 
+								Even though both 'text 1' and 'text 2' are invitations, they differ on many points. The first thing that one sees might be the different ways of introducing the texts. 'Text 1' starts off with "we cordially invite you to attend (...)", which is a very formal introduction, although it uses 'we' and 'you' to make it more interactive. The second text on the other hand, uses, not only informal, but quite colloquial language. The introduction of this text is "You've got to be here for this!". The use of contracted forms and exclamation marks makes it clear from the start that one is dealing with a type of text that is intended for friends and the likes. 
+							</p>
+							<p>
+								The  first text is invitation to a workshop and gives informasion about this event. By looking at how this text is written, one can see that it is intended for 'experts' in the field. Names and abbreviations of the parties involved might not mean much to people with no involvement in this. i.e. "the ICT programme of the Sixth RTD Framework of the European Communities" and "e-Government policymakers". This cannot be said about 'Text 2', that can be understood by all.
+							</p>
+							<p>
+								The sentence length of the first text are very long and cumbersome. The whole text consists of 125 words, that make up only 4 sentences. That gives an average of 31 words in each sentence. A sentence should, according to the Plain English Campaign, consist of 15-20 words. The second text, however, has an average sentence length of 11 words per sentence. This is 20 words less than 'text 1', and a good example of how sentence length often depends on the formality of the text. 
+							</p>
+							<p>
+								The words in the 'text 1' tends to be longer, Romanced words, which is commonly found in formal texts. The second text uses mostly smaller words with Germanic origin, as well as non-standard words like "Yo Ho Ho".
+							</p>
+							<p>
+								There is a notable difference in how the two texts presents the time the events will take place. The first text uses a formal approach with "Tuesday, March 11, 2008". 'Text 2' takes a different approach and uses a form closer to spoken  English; "Friday 14th at 4pm".
+							</p>
+							<p>
+								The first text use the passives "(...) and addresses (...)" and "Improving access to (...)". The first is to focus on who this is directed to, and the second to make the statement stronger. 'Text 2' maintains the personal flavor and tends to use active sentence. The passive "Best outfit wins a prize", however, is used to focus attention on what it is that will win the price.
+							</p>
+							<p>
+								One might say that the differences betweens these two texts can be reduced to formality. This difference in formality can be contributed to the level required by the different events. The second text is an invitation to a birthday party, therefore a friendly tone is appropriate. The first text is an invitation to a more formal event, and requires a more serious tone. 
+							</p>
+							<hr>
+							<p>
+								438 Followers, 34 Posts
+							</p>
+							<p>
+								<img src="https://dl.dropboxusercontent.com/s/pvztif2339vq18d/bluemale2.png" width="40pt">
+								<img src="https://dl.dropboxusercontent.com/s/lf0hp4pqiciim6h/yellowfemale2.png" width="40pt">
+								<img src="https://dl.dropboxusercontent.com/s/6ro1gq5cf6r0kn9/greenmale1.png" width="40pt">
+							</p>
+						</div>
+					</div>
+				</div>
+				<div class="col-lg-4 col-md-6 col-sm-12">
+					<div class="panel panel-default">
+						<div class="panel-thumbnail"><img  src="https://dl.dropboxusercontent.com/s/nhv9px45tfr1j9o/bluewall.jpg" width="100%" height="100pt"  style="object-fit:cover;"></div>
+							<h2 class="textOnImage">Comparing two Texts</h2>
+							<div class="panel-body">
+								<p class="lead">
+									<strong>Comparison</strong>
+								</p>
+								<p> 
+									One can find a great deal of difference between two texts, even though the texts might be just a single paragraph long. Many of the differences will be caused by the different reasons one has for writing the texts, why one has to write them, who the target audience consists of  and, of course, what one writes about. Some of the different choices made in 'Text 1' and 'Text 2' will be treated briefly in the following text.
+								</p>
+								<p>	
+									The first text talks about the applicability of local grammar to the concept of evaluation, which is a field that requires a certain number of linguistic terms. This might make entences like "(...), making a non-evaluative adjective temporarily evaluative." hard to grasp for other reasons than the formality alone.
+								</p>
+								<p>	
+									The second text, on the other hand, talks about the importance of having "Freefone Phone Books" for a business to aquire large amounts of customers. This field does not require specific terms. It is in fact preferable to keep a text like this as simple as possible.
+								</p>
+								<p>	
+									Advertisements, like 'Text 2', keep it simple because the goal is usually to be read by as many people as possible. Even though this text's target group would be business owners, the main purpose is to sell these entries in the "Phone Book" to anyone willing to buy them, and to convince people that they need to buy it to become successful.
+								</p>
+								<p>	
+									The first text does not need to attract as many people. It is likely to be found in a book for linguists that are already interested in the subject at hand. However, even though it does not have to convince people to study this, it has to educate the reader and make him or her keep an interest in the field.
+								</p>
+								<p>	
+									The different vocabulary used in these texts can be said to be characteristic for the text types they belong to. The first one uses formal words like "to identify" instead of i.e. 'to find'. Another interesting aspect of the language used is the amount of words and phrases implying uncertainty, maybe as a way for the writer to distance himself from the text. Examples of this might be "It is not possible to be 100 percent certain of this; (...)".
+								</p>
+								<p>	
+									The second text uses a different approach with a lot of certainty, as in "your business needs customers (...)" There is also more informal, maybe even colloquial words. This can be seen clearly in the verb "to beef up" used about making the entry bigger. Taking such an approach makes the text more hard hitting, as well as it maintains the cheerful and friendly tone.
+								</p>
+								<p>	
+									The two texts use different approaches to get their points across to the readers. One can see that most of these differences can be said to be characteristic for the text types. When there are differences in one aspect there is a good chance that the rest will differ along the same lines. This is especially the case when the texts serve very different purposes. 
+								</p>
+								<hr>
+								<p>
+									532 Followers, 9 Posts
+								</p>
+								<p>
+									<img class="img-circle" src="https://dl.dropboxusercontent.com/s/6ro1gq5cf6r0kn9/greenmale1.png" width="40pt">
+									<img class="img-circle" src="https://dl.dropboxusercontent.com/s/bx6bfm1t1kj8x7t/yellowfemale1.png" width="40pt">
+									<img class="img-circle" src="https://dl.dropboxusercontent.com/s/79h4un2vy0lw9eh/bluemale1.png" width="40pt">
+								</p>
+							</div>
+						</div>
+					</div>
+					<div class="clearfix"></div>
+					<div class="col-md-12"><h1>Headlines</h1></div>	
+						<div class="col-md-4 col-sm-6">
+							<div class="panel panel-default">
+							   	<div class="panel-heading"><h4>Review</h4></div>
+									<div class="panel-body">
+										<img src="https://dl.dropboxusercontent.com/s/pvztif2339vq18d/bluemale2.png" width="50pt" class="img-thumbnail img-circle pull-right"> 
+										<a>Name of Publisher</a>
+										<p>
+											A couple of words about the publisher.
+										</p>
+										<div class="clearfix"></div>
+										<hr>
+										<p>
+											The game starts off nicely with a hands on tutorial that comes fully equipped with voice acting and instructions that are helpful without being tedious. Sadly, this all ends after the tutorial. There is no campaign mode and the single player battles are repetetive and in no way rewarding. 
+										</p>
+										<p>	
+											The <a>PvP</a>  starts off well with some quests giving you some coins while you level up the first few levels. This also fades away and you end up with one quest a day and no other way to get coins without paying or playing too much.
+										</p>
+										<p>	
+											The deck building is nicely done with enough spaces to make a deck for each class. Cards are easily organized and you can get suggestions if you are unsure how to make your first deck. When you have several decks, however, it takes way too long to update them with your new cards.
+										</p>
+										<p>	
+											The first thing I would change is to create a campaign mode. It could introduce all the different types of cards and would definitely be worth the time to create. This would also open up for a nice way to introduce new cards at a later time.
+										</p>
+										<p>	
+											The second thing I would change is the shop. There should be more types of packs to give the player a choice of what to buy as well as the opportunity to buy something in line with his or her playstyle. As it is, the shop is completely unnecessary as you could have all the options in the area where you open the packs.
+										</p>
+										<p>	
+											The third thing would be to introduce guilds, alliances, factions or whatever would like to call the cooperative system that is desperately needed. This could be used to get people to pay more and play for longer. 
+										</p>
+										<p>	
+											I will end by saying that the game is still worth trying playing, especially for those who need an introduction to collectible card games.
+										</p>
+										<h5><a>Link to Article</a></h5>
+									</div>
+								</div> 
+							</div>
+							<div class="col-md-4 col-sm-6">
+								<div class="panel panel-default">
+								   	<div class="panel-heading">
+								   		<h4>People</h4>
+								   	</div>
+									<div class="panel-body">
+									  	Who's in the news today?
+										<hr>
+									  	<div class="well well-sm">
+											<div class="media">
+												<a class="pull-left">
+													<img class="media-object img-thumbnail" src="https://dl.dropboxusercontent.com/s/pvztif2339vq18d/bluemale2.png" width="80pt">
+												</a>
+												<div class="media-body">
+													<h4 class="media-heading">Full Name</h4>
+													<p>
+														<span class="label label-info">1M likes</span> 
+														<span class="label label-primary">897 followers</span></p>
+													<p>
+													   	<a onclick="fillGlyph('myHeart1')" class="btn btn-xs btn-default"><span id="myHeart1" class="glyphicon glyphicon-heart-empty"></span> Like </a>
+													   	<a onclick="fillGlyph('myStar1')" class="btn btn-xs btn-default"><span id="myStar1" class="glyphicon glyphicon-star-empty"></span> Follow </a>
+													</p>
+												</div>
+											</div>
+										</div>
+			   							<div class="well well-sm">
+											<div class="media">
+												<a class="pull-left">
+													<img class="media-object img-thumbnail" src="https://dl.dropboxusercontent.com/s/79h4un2vy0lw9eh/bluemale1.png" width="80pt">
+												</a>
+												<div class="media-body">
+													<h4 class="media-heading">Full Name</h4>
+													<p>
+														<span class="label label-info">13K likes</span>
+														<span class="label label-primary">279 followers</span></p>
+													<p>
+													   	<a onclick="fillGlyph('myHeart2')" class="btn btn-xs btn-default"><span id="myHeart2" class="glyphicon glyphicon-heart-empty"></span> Like </a>
+													   	<a onclick="fillGlyph('myStar2')" class="btn btn-xs btn-default"><span id="myStar2" class="glyphicon glyphicon-star-empty"></span> Follow </a>
+													</p>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div> 
+							</div>
+							<div class="col-md-4 col-sm-6">
+								<div class="panel panel-default">
+								   	<div class="panel-heading">
+								   		<h4>Headline</h4>
+								   	</div>
+									<div class="panel-body">
+									  	<img src="https://dl.dropboxusercontent.com/s/6ro1gq5cf6r0kn9/greenmale1.png" class="img-circle pull-right" style="height:35pt;"><a>Subject</a>
+										<p>
+											A short description.
+										</p>
+									  	<div class="clearfix"></div>
+									  	<hr>
+									  	<div class="clearfix"></div>
+									  	<img src="https://dl.dropboxusercontent.com/s/2f0uqsivx708xy7/dog.jpg" class="img-thumbnail pull-right" style="height:75pt; width:100pt; margin-left:5pt;">
+										<p>
+											Here there's a picture of a dog. The dog is related to what I am saying now. Like all photography on
+											this page, the picture was found on <a href="https://pixabay.com/">pixabay</a>. Although I only use
+											photos from the site, they also have various illustrations you could use for your projects.
+										</p>
+									  	<div class="clearfix"></div>
+									  	<hr>
+										<div class="clearfix"></div>
+										<img src="https://dl.dropboxusercontent.com/s/6gf9b3fkj6o9323/church.jpg" class="img-thumbnail pull-left" style="height:75pt; width:100pt; margin-right:5pt;">
+											<p>
+												This picture is of a church. The colors are similar to the picture of the dog so this text feels like
+												it is part of what is said above the line. Except for photos, all the images on the site has been 
+												created by <a href="#">Jostein Design</a>.
+											</p>
+										</div>
+									</div> 
+								</div>
+							</div>
+						</div>
+
+						<div id="loginModal" class="modal fade" tabindex="-1" role="dialog" aria-hidden="true">
+						  	<div class="modal-dialog">
+						  		<div class="modal-content">
+								  	<div class="modal-header">
+									  	<button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
+									  	<h2 class="text-center">
+										  	<img src="http://placehold.it/120x120/ffffff/ffffff" class="img-thumbnail img-circle">
+										  	<br>
+										  	Log in
+									  	</h2>
+								  	</div>
+							  		<div class="modal-body">
+									  	<form class="form col-md-12 center-block">
+											<div class="form-group">
+											  	<input type="email" class="form-control input-lg" placeholder="Email" required>
+											</div>
+											<div class="form-group">
+												<input type="password" class="form-control input-lg" placeholder="Password" required>
+											</div>
+											<div class="form-group">
+												<button class="btn btn-primary btn-lg btn-block">Sign In</button>
+											  	<span class="pull-right"><a href="#">Create a new Account</a></span>
+											  	<span><a href="#">Forgot your Password?</a></span>
+											</div>
+										</form>
+									</div>
+							  		<div class="modal-footer">
+								  	<div class="col-md-12">
+								  		<button class="btn" data-dismiss="modal" aria-hidden="true">Cancel</button>
+								  	</div>	
+							  	</div>
+						  	</div>
+						</div>
+					</div>
+					<div id="aboutModal" class="modal fade" tabindex="-1" role="dialog" aria-hidden="true">
+  						<div class="modal-dialog">
+  							<div class="modal-content">
+	  							<div class="modal-header">
+		  							<button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
+		  							<h2 class="text-center">About</h2>
+	  							</div>
+							  	<div>
+									<div class="col-md-12 text-center">
+										<br>
+										<div id="aboutImage"></div>
+										<div class="clearfix"></div>
+										<br>
+										<p>
+											Hello everyone! We're a bunch of people who decided to make this thing that is 
+											very useful. Since we started in 1917, we have doubled in size and are now more
+											than four people.
+										</p>
+									</div>
+							  	</div>
+							  	<div class="modal-footer">
+								  	<button class="btn" data-dismiss="modal" aria-hidden="true">OK</button>
+							  	</div>
+					  		</div>
+					  	</div>
+					</div>
+					<div id="thirdModal" class="modal fade" tabindex="-1" role="dialog" aria-hidden="true">
+					  	<div class="modal-dialog">
+					  		<div class="modal-content">
+						  		<div class="modal-header">
+							  		<button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
+							  		<h2 class="text-center">Walnuts</h2>
+						  		</div>
+							  	<div>
+									<div class="col-md-12 text-center">
+										<br>
+										<div id="thirdImage"></div>
+										<div class="clearfix"></div>
+										<br>
+										<p>
+											These are walnuts.
+										</p>
+									</div>
+							  	</div>
+						  		<div class="modal-footer">
+							  		<button class="btn" data-dismiss="modal" aria-hidden="true">OK</button>
+						  		</div>
+					  		</div>
+					  	</div>
+					</div>
+
+		<footer>
+			<br><br><br>
+			<div class="container-fluid footerShadow">
+				<br><br>
+			  	<p class="pull-right">
+					&copy; Copyright 2016 by 
+					<a target="_blank" href="../Home/index.html">Jostein Design</a>. 
+					All Rights Reserved.
+			  	</p>
+				<br><br>
+			</div>
+		<footer>			 
+	</body>
+</html>
